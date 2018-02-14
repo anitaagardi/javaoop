@@ -12,6 +12,7 @@ public class HelloWorld {
 		 * Kommentek
 		 * XYZ
 		 */
+		//Komment3
 		System.out.println("Hello Anita!");
 
 	}
