@@ -7,7 +7,7 @@ public class HelloWorld {
 	 */
 	public static void main(String[] args) {
 		//Komment
-		//Komment2
+		//Komment3
 		/*
 		 * Kommentek
 		 * XYZ
