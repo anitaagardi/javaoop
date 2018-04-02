@@ -11,10 +11,13 @@ public class Runner {
 		Bread b1=new Bread("Bread",210,27,3);
 		System.out.println(p1.toString());
 		System.out.println(b1.toString());
-		if(b1.getGrossPrice()>p1.getGrossPrice()){
+	
+		if(b1.hasMorePrice(p1)==1){
 			System.out.println("Bread");
 		}
-		else{
+		else if(b1.hasMorePrice(p1)==0){
+			System.out.println("Equals");
+		}else{
 			System.out.println("Milk");
 		}
 		Product product2=new Bread("Bread",220,27,4);

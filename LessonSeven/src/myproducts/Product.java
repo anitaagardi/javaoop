@@ -23,9 +23,9 @@ public class Product {
 		if(getGrossPrice()>p.getGrossPrice()){
 			return 1;
 		}else if(getGrossPrice()<p.getGrossPrice()){
-			return 0;
+			return -1;
 		}
-		return -1;
+		return 0;
 	}
 	
 	

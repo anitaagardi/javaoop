@@ -10,7 +10,7 @@ public class Runner {
 		// TODO Auto-generated method stub
 		System.out.println("The amount of books");
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
+		int n=Integer.parseInt(s.nextLine());
 		BookStyle[] bookStyle=new BookStyle[n];
 		for(int i=0;i<bookStyle.length;i++){
 			System.out.println("Title:");
@@ -18,9 +18,9 @@ public class Runner {
 			System.out.println("Author:");
 			String author=s.nextLine();
 			System.out.println("Issue year:");
-			int issueYear=s.nextInt();
+			int issueYear=Integer.parseInt(s.nextLine());
 			System.out.println("Price: ");
-			int price=s.nextInt();
+			int price=Integer.parseInt(s.nextLine());
 			System.out.println("Style: ");
 			String style=s.nextLine();
 			bookStyle[i]=new BookStyle(title,author,issueYear,price,style);

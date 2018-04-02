@@ -10,15 +10,15 @@ public class EmployeeRunner {
 		int n=0;
 		System.out.println("The number of employees: ");
 		Scanner in=new Scanner(System.in);
-		n=in.nextInt();
+		n=Integer.parseInt(in.nextLine());
 		Employee[] employees=new Employee[n];
 		for(int i=0;i<employees.length;i++){
 			System.out.println("Name:");
-			String name=in.next();
+			String name=in.nextLine();
 			System.out.println("Age:");
-			int age=Integer.parseInt(in.next());
+			int age=Integer.parseInt(in.nextLine());
 			System.out.println("Salary:");
-			int salary=Integer.parseInt(in.next());
+			int salary=Integer.parseInt(in.nextLine());
 			employees[i]=new Employee(name,age,salary);
 		}
 		for(int i=0;i<employees.length;i++){
